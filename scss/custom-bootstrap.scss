@@ -1,0 +1,35 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+$headerBackground: #F6F6F7;
+$fontLight: #888888;
+$fontDark: #222222;
+$borderLight: #CCCCCC;
+$borderDark: #222222;
+$requiredColor: #C90000;
+$customTransition: all 0.2s ease-in-out;
+
+html, body {
+  height: 100%;
+}
+
+.bg-custom {
+  background-color: $headerBackground;
+}
+
+.btn-outline-dark {
+  @include button-outline-variant($fontDark, #FFFFFF, $borderDark, $borderDark, #FFFFFF);
+  @include transition($customTransition);
+  @include border-radius(0);
+  font-weight: bold;
+  border: 2px solid $borderDark;
+}
+
+.btn-outline-light {
+  @include button-outline-variant($fontLight, $fontLight, #FFFFFF, $borderDark, $fontDark);
+  @include transition(none);
+  @include border-radius(0);
+  border: 1px solid $borderLight;
+  &:hover {
+    border-color: $borderLight;
+  }
+}

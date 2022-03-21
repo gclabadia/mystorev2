@@ -1,0 +1,45 @@
+#header nav a {
+	color: #888888;
+	font-weight: bold;
+	font-size: 0.7rem;
+	text-align: right;
+}
+
+#content div.card-main, #content span {
+	color: #222222;
+	margin: 10px;
+}
+
+#content span {
+	color: #222222;
+}
+
+#content div.card-sub, #content p.card-text {
+	color: #888888;
+}
+
+.form-group.required .control-label:after {
+	content: "*";
+	color: #C90000;
+}
+
+.navbar-nav .dropdown-menu {
+	position: absolute;
+	border-radius: 0;
+}
+.cart-dropdown {
+	width: 350px;
+	right: 0;
+	left: auto !important;
+}
+
+.cart-dropdown .card-cart{
+	 max-width: 300px;
+}
+.cart-dropdown .dropdown-item:hover, .cart-dropdown .dropdown-item:active {
+	background-color: #FFFFFF;
+}
+
+#navbarDropdown:hover, #navbarDropdown[aria-expanded='true'] {
+	color: #222222;
+}
